@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Study Planner 📚</h1>
+            <p>Organize your tasks. Stay productive.</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+            <div class="stat-card">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+        </div>
+
+        <div class="task-box">
+            <h2>Add a New Task</h2>
+
+            <form id="taskForm">
+                <input type="text" id="taskInput"
+                    placeholder="Enter your task..." required>
+
+                <input type="date" id="taskDate" required>
+
+                <select id="taskPriority">
+                    <option value="Low">Low Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="High">High Priority</option>
+                </select>
+
+                <button type="submit">+ Add Task</button>
+            </form>
+        </div>
+
+        <div class="task-list">
+            <h2>My Tasks</h2>
+            <div id="tasks"></div>
+        </div>
+
+        <footer>
+            Made with ❤️ for productive students
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
